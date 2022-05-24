@@ -1,0 +1,233 @@
+:root{
+    --color-primary:
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    appearance:none;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: pooping, san-serif;
+    background-color:azure
+}
+.danger-one{
+    color: red;
+}
+.danger{
+    color:danger;
+}
+.primary{
+    color:primary;
+}
+.success{
+    color:success;
+}
+a{
+ color:black;   
+}
+img{
+    display:block;
+    width: 100%;
+
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size:0.87rem;
+}
+h4{
+    font-size:0.8rem;
+}
+h5{
+    font-size:0.77rem;
+}
+.profile-photo{
+    width:2.8rem;
+    height:2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-muted{
+    color: black;
+}
+p{
+    color:black;
+}
+b{
+    color:black;
+}
+.container{
+    display:grid;
+    width:96%;
+    margin:0 auto;
+    gap:1.8 rem;
+    grid-template-columns:14rem auto 23rem;
+}
+aside{
+height:100vh;
+
+}
+aside .top{
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top: 1.4rem;
+}
+aside .logo img{
+    width:2rem;
+    height:2rem;
+    margin:2rem;
+}
+aside .close{
+    display: none;
+}
+aside .sidebar{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    height:86vh;
+    position:relative;
+    top:1.4rem;
+
+}
+aside .h3{
+    font-weight:500;
+}
+aside .sidebar a{
+    display:flex;
+    color:black;
+    margin-left:2rem;
+    gap: 1rem;
+    align-items: center;
+    position:relative;
+    height:3.7rem;
+    transition:all 300ms ease;
+}
+
+aside .sidebar a span{
+    
+    font-size:1.6rem;
+    transition:all 300ms ease;
+
+}
+aside .sidebar a.last-child{
+    position:absolute;
+    bottom:1rem;
+    width:100%;  
+}
+aside .sidebar a:active{
+   background-color:rgb(245, 226, 202);
+   color:primary; 
+   margin-left: 0;
+}
+aside .sidebar a:active:before{
+    content:"";
+    width:6px;
+    height: 100%;
+    background-color: rgb(238, 119, 75);
+}
+aside .sidebar a:active span{
+    color:primary;
+    margin-left: calc(1rem-3px);
+}
+aside .sidebar a:hover{
+    color:rgb(161, 217, 161);
+}
+aside .sidebar a:hover span{
+    margin-left:1rem;
+}
+div .middle .top{
+    background-color: white;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-top: 1.4rem;
+    margin-left:1.4rem;
+    width:96%;
+    height:10%;
+    padding-left:35rem;
+    flex-direction: row;
+    
+}
+div .middle .top .span .a{
+    display:inline-block;
+    padding:2%;
+}
+div.mid{
+    width:300vh;
+    height:30%;
+    background-color: white;
+    margin-top:1.4rem;
+    margin-left:1.4rem;
+}
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  /* The search field */
+  #myInput {
+    
+    background-image: url('./images/search\ icon.jpg');
+   
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display:flex;
+    flex-direction:column;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalEnergies Power monitoring System</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp">
+</head>
+<body>
+    <div class="container">
+        <!--Design the side bar -->
+        <aside>
+            <div class="top">
+                 <img src="./images/index.png"  class="logo" alt="Logo"><br>
+                 <h2 class="danger">Smart Montoring and Control System</span></h2> <br>
+                 
+                 <div class="close">
+                    <span class="material-icons-sharp">
+                        close
+                        </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                 <a href="#">
+                    <span class="material-icons-sharp">
+                        home
+                        </span>
+                    <h3> Home</h3>
+                 </a><br>
+                 <a href="#">
+                    <span class="material-icons-sharp">
+                        devices
+                        </span>
+                    <h3> Devices</h3>
+                </a><br>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        trending_up
+                        </span>
+                    <h3>Trends</h3>
+                </a><br>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        summarize
+                        </span>
+                    <h3> Report</h3>
+                </a><br>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        account_circle
+                        </span>
+                    <h3>Profile</h3>
+                </a><br>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        description
+                        </span>
+                    <h3> About SPMCS</h3>
+                </a><br>
+                <a href="#" class="last-child">
+                    <span class="material-icons-sharp">
+                        logout
+                        </span>
+                    <h3>Log Out</h3>
+                </a><br>
+            </div>
+        </aside>
+        <!--End of the side bar-->
+        <!--Designing the main section-->
+        <div class="middle">
+            <div class="top">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                        </span>
+                        <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        notifications
+                        </span>
+                        <h3>Notifications</h3>
+                </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            account_circle
+                            </span>
+                            <h3>Welcome,Teddy</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            manage_accounts
+                            </span> 
+                            <h3>Manage Accounts</h3>
+                    </a>
+            </div>
+            <div class="mid">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Device</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                      <a href="#">Device 1</a>
+                      <a href="#">Device 2</a>
+                      <a href="#">Device 3</a>
+                    </div>
+                  </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
