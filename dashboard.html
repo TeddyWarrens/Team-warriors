@@ -7,14 +7,15 @@
     <title>TotalEnergies Power monitoring System</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="gauge.css">
 </head>
 <body>
     <div class="container">
         <!--Design the side bar -->
         <aside>
             <div class="top">
-                 <img src="./images/index.png"  class="logo" alt="Logo"><br>
-                 <h2 class="danger">Smart Montoring and Control System</span></h2> <br>
+                 <img src="./images/totalllllll.png"  class="logo" alt="Logo"><br>
+                 <h2 class="danger"> <span id="primary">Total Energies Power </span><span id="danger">Montoring System</span></h2> <br>
                  
                  <div class="close">
                     <span class="material-icons-sharp">
@@ -55,6 +56,24 @@
                 </a><br>
                 <a href="#">
                     <span class="material-icons-sharp">
+                        chat
+                        </span>
+                        <h3>Messages</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        help_center
+                        </span>
+                        <h3>Help Center</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                        </span>
+                        <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
                         description
                         </span>
                     <h3> About SPMCS</h3>
@@ -71,43 +90,76 @@
         <!--Designing the main section-->
         <div class="middle">
             <div class="top">
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        settings
-                        </span>
-                        <h3>Settings</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        notifications
-                        </span>
-                        <h3>Notifications</h3>
-                </a>
+                <div class="form">
+                    <form>
+                        <div>
+                          <input type="search" id="mySearch" name="q"
+                          placeholder="Search for devices" size="30">
+                          <button>Search</button>
+                        </div>
+                      </form>
+                </div>
+                  
+                <div class="contents">
                     <a href="#">
                         <span class="material-icons-sharp">
-                            account_circle
+                            dark_mode
                             </span>
-                            <h3>Welcome,Teddy</h3>
-                    </a>
                     <a href="#">
                         <span class="material-icons-sharp">
-                            manage_accounts
-                            </span> 
-                            <h3>Manage Accounts</h3>
+                            notification_important
+                            </span>
+                            <a href="#">
+                                <span class="material-icons-sharp">
+                                    message
+                                    </span>
+                            </a>
+                            
                     </a>
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                account_circle
+                                </span>
+                                
+                        </a>
+                        
+                        <a href="#" class="last">
+                            <span class="material-icons-sharp">
+                                expand_more
+                            </span>       
+                        </a>
+                </div>
+                    
             </div>
             <div class="mid">
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Device</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                      <a href="#">Device 1</a>
-                      <a href="#">Device 2</a>
-                      <a href="#">Device 3</a>
+               <h2>Overview.</h2>
+                <div id="current" class="gauge">
+                    <div class="gauge-body">
+                        <div class="gauge-fill">
+                            <div class="gauge-cover">50%</div>
+                        </div>
                     </div>
+                </div>
+                
+                <div id="voltage">
+
+                </div>
+                <div id="power">
+                    
+
+                </div>
                   </div> 
+                  <div class="switch">
+                      <h3 id="date">Last Logon: <span id="logdate"> Invalid date</span></h3>
+                      <h3 id="status">Status: <button>ACTIVE</button></h3>
+                  </div>
+                  
             </div>
         </div>
     </div>
+    <script src="dist/gauge.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="gauge.js"></script>
+    
 </body>
 </html>
