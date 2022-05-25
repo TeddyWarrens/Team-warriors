@@ -1,0 +1,72 @@
+body{
+    background-image: url('./images/businessman-check-stock-factory-tablet-industrial-engineer-using-software-augment-virtual-reality-to-monitoring-machine-real-162208969.jpg');
+    background-repeat: no-repeat ;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+   
+}
+#head{
+    text-align: center;
+    color: black;
+    opacity:1.0;
+   
+}
+form{
+    background-color:whitesmoke;
+    width: 35vw;
+    height: 80vh;
+    opacity:1;
+    margin-top:1%;
+    margin-left:60%;
+    padding-top: 0rem;
+    border-radius: 1rem;
+    
+}
+#login{
+    text-align: center;
+    color:  black;
+    font-size: 30px;
+}
+p{
+    text-align: center;
+    color: black;
+    font-size: 15px;  
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left:20%;
+    width: 40vh;
+    height: 8vh;
+    border-radius: 1rem;
+    background-color: transparent;
+    font-size: larger;
+    text-align: center;
+    color: black;
+    opacity: 10;
+}
+ #submit{
+    margin-top: 2.5rem; 
+    background-color:black;
+    font-size: larger;
+    text-align: center;
+    width: 20vh;
+    height: 8vh;
+    margin-left:35%;
+    border-radius: 1rem;
+    color: black;
+}
+img{
+    width:200px;
+    height:150px;
+    opacity:20;
+    margin-left:30%;
+    border-radius: 50%;
+    margin-top:1%;
+    
+}

@@ -156,24 +156,17 @@ div .middle .top{
     margin-left:1.4rem;
     width:96%;
     height:10%;
-    padding-left:5rem;
+    padding-left:7rem;
     flex-direction: row;
     
 }
-.form, .contents{
-    width: 45%;
-    height:90%;
-    float:left;
-    
-    margin: 1rem;
 
-}
 .contents{
     display:flex;
     flex-direction: row;
     align-items:center;
     
-    padding-left:5rem;
+    padding-left:40rem;
     padding-right: 0;
 }
 .form{
@@ -283,7 +276,7 @@ div.switch{
         position:relative;
         border-top-left-radius: 100% 200%;
         border-top-right-radius: 100% 200%;
-        overflow:hidden;
+       
     }
     .gauge-fill{
         position:absolute;
@@ -291,24 +284,27 @@ div.switch{
         left:0;
         width:inherit;
         height:100%;
-        background:blue;
+        
         transform-origin:center;
         transition:transform 0.2ms ease out;
-        transform:rotate(0.25turn);
+        transform:rotate(0.55turn);
     }
     .gauge-cover{
-        width:75%;
-        height:50%;
-        background:red;
+        width:25%;
+        height:25%;
+       
         position:absolute;
         border-radius:50%;
-        top:25%;
-        left:50%;
-        transform:translateX(-50%);
+        top:12%;
+        left:12%;
+        transform:translateY(-50%);
         /*Text*/
         display:flex;
+        
         align-items:center;
         justify-content:center;
+        padding-bottom:25%;
+        box-sizing:border-box;
     }
     
       

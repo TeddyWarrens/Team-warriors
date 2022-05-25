@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TotalEnergies Power monitoring System</title>
+    <title>Report</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp">
     <link rel="stylesheet" href="gauge.css">
+    <link rel="stylesheet" href="devices.css">
 </head>
 <body>
     <div class="container">
@@ -24,13 +25,13 @@
                 </div>
             </div>
             <div class="sidebar">
-                 <a href="#">
+                 <a href="dashboard.html">
                     <span class="material-icons-sharp">
                         home
                         </span>
                     <h3> Home</h3>
                  </a><br>
-                 <a href="devices.html">
+                 <a href="#">
                     <span class="material-icons-sharp">
                         devices
                         </span>
@@ -123,35 +124,49 @@
                 </div>
                     
             </div>
-            <div class="mid">
-               <h2>Overview.</h2>
-                <div id="current" class="gauge">
-                    <div class="gauge-body">
-                        <div class="gauge-fill">
-                            <div class="gauge-cover">50%</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="voltage">
-
-                </div>
-                <div id="power">
-                    
-
-                </div>
-                  </div> 
-                  <div class="switch">
-                      <h3 id="date">Last Logon: <span id="logdate"> Invalid date</span></h3>
-                      <h3 id="status">Status: <button>ACTIVE</button></h3>
-                  </div>
+            <div class="down">
+                <h2 class="table">Devices.</h2>
+                <table >
+                    <tr>
+                      <th></th>
+                      <th scope="col">Serial-number</th>
+                      <th scope="col">Device name</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Date registered</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  
+                    <tr>
+                      <td>1</td>
+                      <td>1234567</td>
+                      <td>Device 1</td>
+                      <td>Ntinda</td>
+                      <td>03/4/2017</td>
+                      <td id="status-not">NOT ACTIVE</td>
+                      
+                    </tr>
+                  
+                    <tr>
+                      <td>2</td>
+                      <td>1234567</td>
+                      <td>Device 2</td>
+                      <td>Nakawa</td>
+                      <td>12/09/1999</td>
+                      <td id="status">ACTIVE</td>
+                      
+                    </tr>
+                      
+                    <tr>
+                      <td>3</td>
+                      <td>1234567</td>
+                      <td>Device 3</td>
+                      <td>Mukono</td>
+                      <td>21/06/2008</td>
+                      <td id="status">ACTIVE</td>
+                    </tr>
+                  </table>
                   
             </div>
-        </div>
-    </div>
-    <script src="dist/gauge.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="gauge.js"></script>
-    
+            </div>
 </body>
 </html>
