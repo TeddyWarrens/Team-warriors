@@ -1,0 +1,41 @@
+.profile{
+    background-color:whitesmoke;
+    
+    margin-top: 1rem;
+    margin-left:1rem;
+    width:76vw;
+    height:90%;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left:2rem;
+    display: grid;
+    grid-template-columns:14rem auto 23rem;
+}
+div .side{
+    width:20vw;
+    height:50%;
+    background-color:white;
+    border-radius: 0.5rem;
+     
+}
+img{
+    border-radius:4%;
+    height:100%;
+}
+.profile-content{
+    background-color: #006bff;
+    width:40vw;
+    height:80%;
+  margin-left: 9rem;
+  border-radius: 4%;
+}
+.profile-content h2{
+    padding-left:15%;
+    padding-top: 6%;
+}
+.profile-content h1{
+    padding-left:22%;
+    padding-top: 4%;
+    border: none; 
+    
+}

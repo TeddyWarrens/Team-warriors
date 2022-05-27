@@ -1,6 +1,4 @@
-:root{
-    --color-primary:
-}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +11,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: pooping, san-serif;
-    background-color:azure
+    background-color:white;
 }
 .danger-one{
     color: red;
@@ -49,7 +47,7 @@ h4{
     font-size:0.8rem;
 }
 h5{
-    font-size:0.77rem;
+    font-size:0.9rem;
 }
 .profile-photo{
     width:2.8rem;
@@ -59,6 +57,7 @@ h5{
 }
 .text-muted{
     color: black;
+    margin-left: 4rem;
 }
 p{
     color:black;
@@ -76,29 +75,47 @@ b{
 aside{
 height:100vh;
 
+
 }
 aside .top{
     background-color: white;
+    box-shadow: #ff0000;
     display:flex;
     align-items:center;
     justify-content:space-between;
     margin-top: 1.4rem;
+    
+    border-radius: 1rem;
+} 
+div.header-wrapper label{
+    display:inline-block;
+    color:#ff0000;
+    margin-right: 2rem;
+    font-size:1.8rem;
 }
+.header-title h2{
+    color:black;
+    font-weight:600;
+}
+
 aside .logo img{
-    width:2rem;
-    height:2rem;
-    margin:2rem;
+    width:4px;
+    height:4px;
+    
 }
+
 aside .close{
     display: none;
 }
 aside .sidebar{
-    background-color: white;
+    background-color:#ff0000;
     display:flex;
     flex-direction: column;
     height:86vh;
     position:relative;
     top:1.4rem;
+    transition:left 300ms;
+    border-radius: 10px;
 
 }
 aside .h3{
@@ -127,7 +144,7 @@ aside .sidebar a.last-child{
     width:100%;  
 }
 aside .sidebar a:active{
-   background-color:rgb(245, 226, 202);
+   background-color:#ff0000;
    color:primary; 
    margin-left: 0;
 }
@@ -135,30 +152,35 @@ aside .sidebar a:active:before{
     content:"";
     width:6px;
     height: 100%;
-    background-color: rgb(238, 119, 75);
+    background-color:#12cf6e;
 }
 aside .sidebar a:active span{
     color:primary;
     margin-left: calc(1rem-3px);
 }
 aside .sidebar a:hover{
-    color:rgb(161, 217, 161);
+    color:#12cf6e;
 }
 aside .sidebar a:hover span{
     margin-left:1rem;
 }
 div .middle .top{
-    
+    background-color:whitesmoke;
     display:flex;
     align-items:center;
     gap:3rem;
-    margin-top: 1.4rem;
-    margin-left:1.4rem;
-    width:96%;
+    margin-top: 1rem;
+    margin-left:1rem;
+    width:97%;
     height:10%;
-    padding-left:7rem;
+    padding-left:0.4rem;
     flex-direction: row;
+    border-radius: 0.8rem;
+ 
     
+}
+.middle{
+    background-color:white;
 }
 
 .contents{
@@ -166,7 +188,7 @@ div .middle .top{
     flex-direction: row;
     align-items:center;
     
-    padding-left:40rem;
+    padding-left:20rem;
     padding-right: 0;
 }
 .form{
@@ -183,41 +205,51 @@ button{
     height: 30px;
     width:60px;
     border-radius: 5px;
-    background-color: rgb(74, 74, 207);
+    background-color: #006bff;
 }
 button:hover{
-    background-color:rgb(218, 14, 14);
+    background-color:#ff0000;
 }
  #danger{
-    color:rgb(41, 15, 210);
+    color:#006bff;
 }
 #primary{
-    color:rgb(233, 87, 87);
+    color:#ff0000;
 }
 div .middle .top .span .a{
     display:inline-block;
     padding:2%;
 }
 div.mid{
+    background-color:white;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:0rem 0rem;
     width:75vw;
-    height:30%;
-   /* background-color:white;*/
-    margin-top:1.4rem;
+    height:26%;
+   
+    border-radius:10px;
+    margin-top:1rem;
     margin-left: 2rem;
   padding: 0rem;
+  transition:margin-left 300ms;
    
 }
-div #current, #voltage, #power{
-    width:25%;
-    height:65%;
-    background-color:white;
-    float: right;
+div .current, .voltage, .power{
+    width:80%; 
+    height:80%;
+    float: left;
     margin-left:2.5rem;
-    margin-right:2.5rem;
-    margin-top:1rem;
+    margin-right:2rem;
+    margin-top:0rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
-    padding-right: 4rem;
+    padding-right: 0rem;
+    padding-left: 0.4rem;
+    padding-top: 0.8rem;
+    background-color: whitesmoke;
+    box-shadow:#12cf6e; 
+     
 }
 
 div.middle .top .contents.material-icons-sharp {
@@ -225,26 +257,6 @@ div.middle .top .contents.material-icons-sharp {
     flex-direction:row;
 }
 
-div.switch{
-    background-color: white;
-    width:75vw;
-    height:10%;
-    margin-left:2rem;
-    margin-top: 1rem;
-    display:flex;
-    flex-direction:row;
-}  
-    #date{
-      padding-top:1.2rem; 
-      padding-left:1.5rem; 
-    }
-    #status{
-        padding-top:0.7rem; 
-        padding-left:12rem; 
-    }
-    #logdate{
-        color:rgb(29, 29, 176);
-    }
     form #one{
         display:inline;   
     }
@@ -262,50 +274,63 @@ div.switch{
         right:3rem;
         width:100%;  
     }
-    .gauge{
-        width:100%;
-        max-width:250px;
-        font-family: 'Roboto', sans-serif;
-        font-size:32px;
-    }
-    .gauge-body{
-        width:100%;
-        height:0;
-        padding-bottom:50%;
-        background: green;
-        position:relative;
-        border-top-left-radius: 100% 200%;
-        border-top-right-radius: 100% 200%;
-       
-    }
-    .gauge-fill{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:inherit;
-        height:100%;
+    .main-graph{
+        padding:1rem 1.2rem;
+        width:98%;
         
-        transform-origin:center;
-        transition:transform 0.2ms ease out;
-        transform:rotate(0.55turn);
+        height:60%;
+        margin-left:2%;
     }
-    .gauge-cover{
-        width:25%;
-        height:25%;
-       
-        position:absolute;
-        border-radius:50%;
-        top:12%;
-        left:12%;
-        transform:translateY(-50%);
-        /*Text*/
-        display:flex;
+    .graph-card{
+        border-radius:15px;
         
-        align-items:center;
-        justify-content:center;
-        padding-bottom:25%;
-        box-sizing:border-box;
+       padding:1rem;
+       background-color: whitesmoke;
+       height:100%;
+       
+
     }
+    .graph-content{
+        border-radius: 12px;
+        padding:1rem;
+        background-color:whitesmoke;
+        height: 97%;
+        
+    }
+    .graph-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icons-wrapper{
+        display: flex;
+        align-items: center;
+        
+    }
+    .icon{
+        height:40px;
+        width:40px;
+        border-radius: 7px;
+        background:#fed800;
+        display: grid;
+        place-items: center;
+        font-size: 1.2rem;
+        margin: 0.8rem;
+    }
+    .graph-head select{
+        background:#12cf6e;
+        border-radius:10px;
+        height:35px;
+        padding:0.5rem 1 rem;
+        border: none;
+        outline:none;
+    }
+    #menu-toggle{
+      display:none;
+    }
+    
+    
+    
     
       
  
