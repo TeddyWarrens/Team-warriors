@@ -108,7 +108,7 @@ aside .close{
     display: none;
 }
 aside .sidebar{
-    background-color:#ff0000;
+    background-color:lightblue;
     display:flex;
     flex-direction: column;
     height:86vh;
@@ -128,7 +128,7 @@ aside .sidebar a{
     gap: 1rem;
     align-items: center;
     position:relative;
-    height:3.2rem;
+    height:3.5rem;
     transition:all 300ms ease;
 }
 
@@ -191,10 +191,7 @@ div .middle .top{
     padding-left:20rem;
     padding-right: 0;
 }
-.form{
-   padding-left: 2rem;
-   padding-top: 1rem;
-}
+
 input{
     text-align: center;
     border-radius: 5px;
@@ -225,27 +222,27 @@ div.mid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     grid-gap:0rem 0rem;
-    width:75vw;
+    width:78vw;
     height:26%;
    
     border-radius:10px;
     margin-top:1rem;
-    margin-left: 2rem;
+    margin-left: 1.2rem;
   padding: 0rem;
   transition:margin-left 300ms;
    
 }
 div .current, .voltage, .power{
-    width:80%; 
+    width:93%; 
     height:80%;
     float: left;
-    margin-left:2.5rem;
+    margin-left:1.3rem;
     margin-right:2rem;
     margin-top:0rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
     padding-right: 0rem;
-    padding-left: 0.4rem;
+    padding-left: 2.5rem;
     padding-top: 0.8rem;
     background-color: whitesmoke;
     box-shadow:#12cf6e; 
@@ -256,10 +253,6 @@ div.middle .top .contents.material-icons-sharp {
     display:flex;
     flex-direction:row;
 }
-
-    form #one{
-        display:inline;   
-    }
     div.top .material-icons-sharp{  
     display:flex;
     color:black;

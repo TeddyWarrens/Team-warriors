@@ -16,7 +16,7 @@
         <aside>
             <div class="top">
                  <img src="./images/index.jpg"  class="logo" alt="Logo"><br>
-                 <h2 class="danger"> <span id="primary">Total Energies Power </span><span id="danger">Montoring System</span></h2> <br>
+                 
                  
                  <div class="close">
                     <span class="material-icons-sharp">
@@ -55,12 +55,6 @@
                         </span>
                     <h3>Profile</h3>
                 </a><br>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        chat
-                        </span>
-                        <h3>Messages</h3>
-                </a>
                 
                 <a href="#">
                     <span class="material-icons-sharp">
@@ -108,25 +102,7 @@
                         <span class="material-icons-sharp">
                             notification_important
                             </span>
-                            <a href="#">
-                                <span class="material-icons-sharp">
-                                    message
-                                    </span>
-                            </a>
-                            
-                    </a>
-                        <a href="#">
-                            <span class="material-icons-sharp">
-                                account_circle
-                                </span>
-                                
-                        </a>
-                        
-                        <a href="#" class="last">
-                            <span class="material-icons-sharp">
-                                expand_more
-                            </span>       
-                        </a>
+                            </a>      
                 </div>
                     
             </div>
@@ -142,7 +118,7 @@
          <div class="gauge-cover"></div> 
          
         </div>
-        <h5 class="text-muted" style="border:none ; width:90px; background-color:#006bff; border-radius:0.5rem ; padding:2%;">Resistance</h5>
+        <h5 class="text-muted" style="border:none ; width:90px; padding:2%;">Resistance</h5>
                 </div>
                   </div> 
                   <div class="voltage">
@@ -155,7 +131,7 @@
                          
                         </div>
                         
-                        <h5 class="text-muted" style="border:none ; width:90px; background-color:#006bff; border-radius:0.5rem ; padding:2%; ">Voltage</h5>
+                        <h5 class="text-muted" style="border:none ; width:90px ;font-weight: 1000; padding:2%; ">Voltage</h5>
                 
                                 </div>
                         
@@ -169,7 +145,7 @@
                                          <div class="gaugesh-cover"></div> 
                                          
                                         </div>
-                                        <h5 class="text-muted" style="border:none; width:92px; background-color:#006bff; border-radius:0.5rem ; padding:2%;">Temperature</h5>
+                                        <h5 class="text-muted" style="border:none; width:92px;  padding:2%;">Temperature</h5>
                                          
                                 
                                                 </div>
@@ -202,11 +178,16 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="dist/gauge.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
     
     <script src="gauge.js"></script>
     <script src="dashboard-graph.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+</script>
     
 </body>
 </html> 
